@@ -2,23 +2,34 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <!-- Esta línea permite que la página se ajuste automáticamente a cualquier dispositivo -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quinielas GL</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="app">
+  <!-- Logo -->
   <img src="https://i.imgur.com/uQfdvMz.jpeg" class="logo" alt="Logo">
- 
+  
+  <!-- Frase debajo del logo con emojis -->
+  <p class="frase-logo">🎯 JUEGA 🏆 COMPITE 🥇 GANA 💰</p>
+
+  <!-- Título -->
   <h1>Quinielas GL</h1>
- <p class="frase-logo">🎯 JUEGA 🏆 COMPITE 🥇 GANA 💰</p>
+
+  <!-- Contador -->
   <p id="contador"></p>
 
+  <!-- Partidos -->
   <div id="partidos"></div>
 
+  <!-- Inputs de usuario -->
   <input id="nombre" placeholder="Nombre">
   <input id="telefono" placeholder="Teléfono">
 
+  <!-- Botones de acciones -->
   <div class="acciones">
     <button onclick="agregar()">Agregar</button>
     <button onclick="aleatorio()">Aleatorio</button>
@@ -26,13 +37,16 @@
     <button onclick="reiniciar()">Reiniciar</button>
   </div>
 
+  <!-- Enlace a WhatsApp -->
   <a id="whatsapp" target="_blank" class="whatsapp">
     📲 Enviar a WhatsApp
   </a>
 
+  <!-- Totales -->
   <p>Total quinielas: <span id="totalQ">0</span></p>
   <p>Total a pagar: $<span id="totalP">0</span></p>
 
+  <!-- Tabla de registros -->
   <div class="tabla-container">
     <table id="registros" class="tabla-registros">
       <thead>
@@ -58,6 +72,7 @@
   </div>
 </div>
 
+<!-- JS -->
 <script src="script.js"></script>
 </body>
 </html>
